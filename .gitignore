@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.quarto
+
+**/__pycache__/
+**/.ipynb_checkpoints/
+
+code/dev/
+models/

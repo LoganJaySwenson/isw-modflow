@@ -1,0 +1,42 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+    - "notebooks/**"
+
+website:
+  title: "Notebooks"
+  search: false
+
+format:
+  html:
+    theme: cosmos
+    toc: true
+    toc-depth: 4
+    fontsize: 12pt
+    mainfont: "Times New Roman"
+    monofont: "Courier New"
+    link-external-newwindow: true
+    include-in-header:
+      text: |
+        <style>
+        pre code {
+          font-size: 9pt;
+        }
+        .quarto-float-caption {
+          font-size: 12pt;
+          color: inherit;
+        }
+        </style>
+    include-after-body:
+      text: <script>document.querySelectorAll('.quarto-float-caption').forEach(e=>e.innerHTML=e.innerHTML.replace(/^[^.]+\./,'<strong>$&</strong>'))</script>
+    citations-hover: false
+    footnotes-hover: false
+    crossrefs-hover: false
+
+execute:
+  warning: false
+
+crossref:
+  title-delim: "."
