@@ -9,3 +9,5 @@
 
 code/dev/
 models/
+/.quarto/
+**/*.quarto_ipynb
